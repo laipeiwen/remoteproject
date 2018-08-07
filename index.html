@@ -7,6 +7,12 @@
     <title>Document</title>
 
     <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
     
         header {
             width: 1200px;
@@ -22,6 +28,26 @@
             margin: 0 auto;
         }
 
+        section {
+            height: 250px;
+        }
+
+        aside {
+            width: 40%;
+            height: 250px;
+            background-color: #ccc;
+            border: 1px solid #666;
+            float: left;
+        }
+
+        article {
+            width: 60%;
+            height: 250px;
+            background-color: #333;
+            border: 1px solid green;
+            float: left;
+        }
+
         footer {
             width: 1200px;
             height: 80px;
@@ -32,7 +58,12 @@
 </head>
 <body>
     <header>创建header</header>
-    <main>创建main</main>
+    <main>创建main
+        <section>
+            <aside></aside>
+            <article></article>
+        </section>
+    </main>
     <footer>创建footer</footer>
 </body>
 </html>
